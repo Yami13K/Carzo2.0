@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.carticketing">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CarTicketing">
+        <activity android:name="com.example.Admin.TicketEdit"
+            android:theme="@style/Theme.Vios"/>
+        <activity
+            android:name="com.example.Admin.AdminSearch"
+            android:label="Search Panel"
+            android:theme="@style/Theme.CarTicketing" />
+        <activity
+            android:name="com.example.Admin.AdminShow"
+            android:label="All Cars"
+            android:theme="@style/Theme.Carzo" />
+        <activity
+            android:name="com.example.Admin.AdminActivate"
+            android:label="De/Activate"
+
+            android:theme="@style/Theme.Admin" />
+        <activity
+            android:name="com.example.Admin.AdminEdit"
+            android:label="Violations List"
+            android:theme="@style/Theme.Vios" />
+        <activity
+            android:name="com.example.Admin.AdminAdd"
+            android:label="Add Violation"
+            android:theme="@style/Theme.Admin" />
+        <activity
+            android:name="com.example.Admin.AdminPanel"
+            android:label="Admin Panel"
+             />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="Register"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="Login"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HomeActivity"
+            android:label="Home" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:label="Carzo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Pop" />
+    </application>
+
+</manifest>
